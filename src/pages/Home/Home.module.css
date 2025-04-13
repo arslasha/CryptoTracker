@@ -93,3 +93,33 @@
     color: #444;
     margin-bottom: 0.5rem;
 }
+
+
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    .container {
+        padding: 8rem 2rem 2rem;
+    }
+    .greeting h1 {
+        font-size: 2rem;
+    }
+    .greeting p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .container {
+        padding: 6rem 1rem 1rem;
+    }
+    .greeting h1 {
+        font-size: 1.8rem;
+    }
+    .greeting p, .info p {
+        font-size: 1rem;
+    }
+    .info, .popularCryptos {
+        padding: 1rem;
+    }
+}

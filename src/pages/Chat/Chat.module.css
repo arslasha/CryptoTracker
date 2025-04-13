@@ -44,3 +44,13 @@
     gap: 10px;
     align-self: flex-end;
 }
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .chatContainer {
+        padding: 50px 10px 10px;
+    }
+    .messageContainer {
+        height: 60vh;
+    }
+}

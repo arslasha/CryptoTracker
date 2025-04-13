@@ -63,3 +63,35 @@
     font-weight: bold;
     color: #111; /* Темно-серый для активных элементов */
 }
+
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    .navLinks {
+        gap: 1rem;
+    }
+    .linkButton {
+        padding: 6px 15px;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .navbar {
+        height: 3.5rem;
+        padding: 0.5rem;
+    }
+    .logo {
+        height: 4rem;
+        width: 6rem;
+    }
+    .navLinks {
+        gap: 0.5rem;
+    }
+    .linkButton {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}
