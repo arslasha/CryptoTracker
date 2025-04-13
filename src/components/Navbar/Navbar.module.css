@@ -1,0 +1,65 @@
+/* Navbar.module.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 5rem;
+    width: 7rem;
+    flex: 1;
+}
+
+/* Навигационные кнопки */
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.linkButton {
+    background: none;
+    border: 2px solid transparent; /* Убираем стандартную границу */
+    font-size: 1rem;
+    color: #333; /* Темно-серый цвет для текста */
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 20px; /* Скругляем углы */
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none; /* Убираем подчеркивания */
+}
+
+/* Стили для активной кнопки */
+.linkButton.active {
+    font-weight: bold;
+    color: #111; /* Самый темный оттенок серого для активной кнопки */
+    background-color: #f0f0f0; /* Легкий светло-серый фон */
+    border-color: #f0f0f0; /* Цвет границы активной кнопки */
+}
+
+/* Стили для кнопки при наведении */
+.linkButton:hover {
+    background-color: #e0e0e0; /* Еще более светлый серый фон при наведении */
+    color: #111; /* Темный цвет для текста при наведении */
+    border-color: #e0e0e0; /* Тот же серый цвет для границы при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.active {
+    font-weight: bold;
+    color: #111; /* Темно-серый для активных элементов */
+}
