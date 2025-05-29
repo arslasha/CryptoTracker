@@ -29,7 +29,7 @@ export default function Chat() {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
-    const newSocket = io("wss://potato.ipv6b.my.id:2096");
+    const newSocket = io("ws://89.169.168.253:4500");
 
     newSocket.on("connect", () => setSocket(newSocket));
     newSocket.on("message", (message: MessageType) => {
